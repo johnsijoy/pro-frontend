@@ -1,0 +1,109 @@
+/* Skills.css */
+
+.skills {
+  padding: 80px 20px;
+  background-color: #222; /* Dark background for a sleek, modern feel */
+  color: #fff; /* White text for contrast */
+  text-align: center;
+  min-height: 100vh;
+}
+
+.skills-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f1f1f1; /* Lighter color for the title */
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 3px solid #f39c12; /* Bright accent color */
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 900px;
+  background-color: #333; /* Darker background for each skill box */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  color: #f39c12; /* Bright orange for icons */
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.skill:hover .skill-icon {
+  color: #3498db; /* Change icon color on hover to blue */
+}
+
+.skill-info {
+  flex-grow: 1;
+}
+
+.skill-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #f1f1f1; /* Light text color for skill names */
+}
+
+.progress-bar {
+  background-color: #555; /* Darker background for progress bar */
+  border-radius: 20px;
+  height: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.progress {
+  background-color: #3498db; /* Blue progress bar */
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 2.5rem;
+  }
+
+  .skills-list {
+    width: 100%;
+  }
+
+  .skill {
+    width: 95%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skill-info h3 {
+    font-size: 1.6rem;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}

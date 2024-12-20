@@ -1,0 +1,75 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.header ul li {
+  margin: 0 15px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+#about, #skills, #projects, #experience, #contact {
+  background: #f9f9f9;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
